@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/script.js"></script>
+        <title>Cadastro de Anúncios</title>
+    </head>
+    <body>
+        <h1>Cadastro de Anúncios</h1>
+
+        <form class="formulario">
+
+        <div class="field">
+            <label for="nomeAnuncio">Nome do Anúncio:</label>
+            <input type="text" id="nomeAnuncio" name="nomeAnuncio">
+        </div>
+            
+        <div class="field">
+            <label for="cliente">Cliente:</label>
+            <input type="text" id="cliente" name="cliente">
+        </div>
+
+            
+        <div class="field">
+            <label for="dataInicio">Data de Início:</label>
+            <input type="date" id="dataInicio" name="dataInicio">
+        </div> 
+            
+        <div class="field">
+            <label for="datafim">Data de Término:</label>
+            <input type="date" id="dataFim" name="datafim">
+        </div>
+
+        <div class="field">
+            <label for="investimento">Investimento por dia:</label>
+            <input type="number" id="investimento" name="investimento">
+        </div>
+
+        <button id="btnAdicionar" onclick="adicionar()">Adicionar item</button>
+        <button id="btnLer" onclick="ler()">Ler valor</button>
+        <button id="btnRemover" onclick="remover()">Remover item</button>
+        <button id="btnLimpar" onclick="limpar()">Remover todos</button>
+    
+    
+    </form>
+    </body>
+</html>
